@@ -1,147 +1,743 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>개인정보처리방침</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    </style>
-</head>
-<body>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>달달 — 개인정보 처리방침</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-달달(Daldal) 앱(이하 '앱')은 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 및 관련 법령을 준수합니다.
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-본 방침은 앱이 수집하는 정보의 종류, 이용 목적, 보유 기간, 제3자 제공 현황 등을 안내합니다.
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
----
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-## 1. 수집하는 정보
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-### 1-1. 이용자가 직접 입력하는 건강 정보
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-| 항목 | 수집 목적 |
-| --- | --- |
-| 생리 시작일·종료일 | 주기 계산 및 예측 |
-| 증상 (복통, 두통, 피로 등) | 건강 패턴 분석 |
-| 기초체온 | 배란일 예측 정확도 향상 |
-| 수면 시간·운동 강도 | 건강 상태 기록 |
-| 메모 | 자유 기록 |
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
 
-> 위 정보는 **기기 내부(암호화 저장소)에만 저장**되며, 외부 서버로 전송되지 않습니다.
-> 
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-### 1-2. 앱 설정 정보
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-- 알림 설정 (켜짐/꺼짐, 알림 종류)
-- 기본 생리 주기 설정
-- 광고 제거 구매 여부
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-> 위 정보는 기기의 내부 저장소(SharedPreferences)에 저장됩니다.
-> 
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-### 1-3. 광고를 통해 수집되는 정보 (Google AdMob)
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
-광고 무료 버전 이용 시, Google AdMob이 아래 정보를 수집할 수 있습니다.
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
 
-- 광고 식별자 (IDFA/GAID)
-- 앱 사용 패턴, 기기 정보
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
-> iOS 14.5 이상에서는 앱 최초 실행 시 추적 동의(ATT) 팝업이 표시되며, 동의하지 않아도 앱을 정상 이용할 수 있습니다.
-> 
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-> Google AdMob의 개인정보 처리 방침: https://policies.google.com/privacy
-> 
+mark {
+	background-color: transparent;
+}
 
----
+.indented {
+	padding-left: 1.5em;
+}
 
-## 2. 개인정보 이용 목적
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
 
-- 생리 주기 예측 및 건강 정보 제공
-- 푸시 알림 발송 (생리 예정, 기록 리마인더, 가임기·배란일 알림)
-- 앱 서비스 개선
-- 광고 노출 (Google AdMob, 광고 제거 구매 시 제외)
+img {
+	max-width: 100%;
+}
 
----
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
 
-## 3. 개인정보 보유 및 이용 기간
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
 
-- **건강 기록 데이터**: 이용자가 직접 삭제하거나 앱을 삭제할 때까지
-- **앱 설정 정보**: 앱을 삭제할 때까지
-- **광고 관련 데이터**: Google AdMob 정책에 따름
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
 
----
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
 
-## 4. 제3자 제공 현황
+@page {
+	margin: 1in;
+}
 
-| 수신자 | 제공 항목 | 목적 | 보유 기간 |
-| --- | --- | --- | --- |
-| Google LLC (AdMob) | 광고 식별자, 기기 정보 | 맞춤형 광고 제공 | Google 정책에 따름 |
-| Apple / Google | 인앱 결제 정보 | 광고 제거 상품 결제 처리 | 각 스토어 정책에 따름 |
+.collection-content-wrapper {
+	overflow-x: auto;
+}
 
-> **건강 데이터(생리 주기, 증상, 체온 등)는 어떠한 제3자에게도 제공되지 않습니다.**
-> 
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
 
----
+.collection-content {
+	font-size: 0.875rem;
+}
 
-## 5. 개인정보 보호를 위한 기술적·관리적 조치
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
 
-| 조치 | 내용 |
-| --- | --- |
-| 암호화 저장 | 건강 기록 데이터는 iOS Keychain / Android Keystore 기반 암호화 저장소(FlutterSecureStorage)에 저장됩니다. |
-| 서버 미전송 | 건강 데이터는 외부 서버로 전송되지 않으며 기기 내부에만 존재합니다. |
-| 최소 수집 | 서비스 제공에 필요한 최소한의 정보만 수집합니다. |
-| 접근 제한 | 앱 외부에서 저장된 건강 데이터에 직접 접근할 수 없습니다. |
+.column-list {
+	display: flex;
+	gap: 46px;
+}
 
----
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
 
-## 6. 개인정보 파기 절차 및 방법
+.column > *:first-child {
+	margin-top: 0;
+}
 
-**파기 시점**
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
 
-- 이용자가 앱 내 '데이터 초기화' 기능을 실행한 즉시
-- 이용자가 앱을 삭제한 즉시
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
 
-**파기 방법**
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
 
-- 건강 정보(생리 주기, 증상, 체온 등): 기기 암호화 저장소에서 영구 삭제 처리
-- 앱 설정 정보: 기기 내부 저장소에서 영구 삭제 처리
-- 단, 광고 네트워크(Google AdMob)가 보유한 데이터는 Google 정책에 따라 별도 처리됩니다.
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
 
----
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
 
-## 7. 처리방침 변경 고지
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
 
-본 방침이 변경되는 경우 다음 방법으로 사전 공지합니다.
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
 
-- **앱 업데이트** 문서(앱 스토어 버전 노트)
-- **이 페이지** 갱신 (시행일 표시)
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
 
-중요한 변경(이용 목적 변경, 제3자 신규 제공 등)의 경우 최소 7일 전 공지합니다.
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
 
----
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
 
-## 8. 이용자의 권리 및 행사 방법
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
 
-이용자는 언제든지 다음 권리를 행사할 수 있습니다.
+ul > li {
+	list-style: disc;
+}
 
-- **열람**: 앱 내 기록 화면에서 모든 데이터 확인 가능
-- **수정**: 해당 날짜 기록을 다시 저장하면 덮어씌워짐
-- **삭제**: 앱 삭제 시 기기에 저장된 모든 데이터 삭제됨
+ul.to-do-list {
+	padding-inline-start: 0;
+}
 
----
+ul.to-do-list > li {
+	list-style: none;
+}
 
-## 9. 개인정보 보호책임자
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
 
-- 이메일: lyahn79@gmail.com
-- 개인정보 관련 문의는 위 이메일로 연락 주시면 영업일 기준 3일 이내 답변 드립니다.
+ul.toggle > li {
+	list-style: none;
+}
 
----
+ul {
+	padding-inline-start: 1.7em;
+}
 
-## 10. 시행일
+ul > li {
+	padding-left: 0.1em;
+}
 
-본 개인정보 처리방침은 **2026년 7월 1일**부터 시행됩니다.
+ol {
+	padding-inline-start: 1.6em;
+}
 
-방침 변경 시 앱 업데이트 또는 이 페이지를 통해 사전 공지합니다.
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
 
-</body>
-</html>
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="38efa4b5-692f-8116-916f-c0cbb4f22d09" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔒</span></div><h1 class="page-title" dir="auto">달달 — 개인정보 처리방침</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><h2 id="7345424d-7fa5-4bbc-b598-151664905806" class="">개인정보 처리방침</h2></div><div style="display:contents" dir="auto"><p id="5d10eee3-ad7d-4838-b117-c5da854e8a40" class="">달달(Daldal) 앱(이하 &#x27;앱&#x27;)은 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 및 관련 법령을 준수합니다.</p></div><div style="display:contents" dir="auto"><p id="97db3bfe-dc51-4e2c-bc21-9849a34d371e" class="">본 방침은 앱이 수집하는 정보의 종류, 이용 목적, 보유 기간, 제3자 제공 현황 등을 안내합니다.</p></div><div style="display:contents" dir="auto"><hr id="3a3aa2c9-639b-46f8-a45e-76c18c0bf7f4"/></div><div style="display:contents" dir="auto"><h2 id="04e60907-7b0f-44fe-912d-2a92599b37b4" class="">1. 수집하는 정보</h2></div><div style="display:contents" dir="auto"><h3 id="ff39ad90-1689-4845-a849-0579d0587f96" class="">1-1. 이용자가 직접 입력하는 건강 정보</h3></div><div style="display:contents" dir="ltr"><table id="4287cbbe-6f30-48c1-a221-6c85edd1e34f" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="df3147c6-9c95-40e1-a410-9e1da5f19e51"><th id="wZHv" class="simple-table-header-color simple-table-header">항목</th><th id="votW" class="simple-table-header-color simple-table-header">수집 목적</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="1e0477c9-24ca-4146-8ae4-6e1c0071564b"><td id="wZHv" class="">생리 시작일·종료일</td><td id="votW" class="">주기 계산 및 예측</td></tr></div><div style="display:contents" dir="ltr"><tr id="a33143f2-a3c9-4b27-a1af-28b56656ac08"><td id="wZHv" class="">증상 (복통, 두통, 피로 등)</td><td id="votW" class="">건강 패턴 분석</td></tr></div><div style="display:contents" dir="ltr"><tr id="185f9ebe-bf84-425b-8e22-bef54ec07281"><td id="wZHv" class="">기초체온</td><td id="votW" class="">배란일 예측 정확도 향상</td></tr></div><div style="display:contents" dir="ltr"><tr id="abcba4c0-a2f2-4ece-9b28-0c34d1ddc321"><td id="wZHv" class="">수면 시간·운동 강도</td><td id="votW" class="">건강 상태 기록</td></tr></div><div style="display:contents" dir="ltr"><tr id="93800a50-b7dd-42e1-a88d-11dda0442bcc"><td id="wZHv" class="">메모</td><td id="votW" class="">자유 기록</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><blockquote id="1c6f082f-88e6-44db-8b9b-21277a9fca3e" class="">위 정보는 <strong>기기 내부(암호화 저장소)에만 저장</strong>되며, 외부 서버로 전송되지 않습니다.</blockquote></div><div style="display:contents" dir="auto"><h3 id="1239467c-cab4-4c87-a7d6-465a18f4d4cd" class="">1-2. 앱 설정 정보</h3></div><div style="display:contents" dir="auto"><ul id="dc8715b6-89d2-4e30-ba85-a083af80dba4" class="bulleted-list"><li style="list-style-type:disc">알림 설정 (켜짐/꺼짐, 알림 종류)</li></ul></div><div style="display:contents" dir="auto"><ul id="12ad5e74-c885-43c6-91ce-bea8798c2652" class="bulleted-list"><li style="list-style-type:disc">기본 생리 주기 설정</li></ul></div><div style="display:contents" dir="auto"><ul id="39f5c632-1673-4f80-8d94-886073ee1acf" class="bulleted-list"><li style="list-style-type:disc">광고 제거 구매 여부</li></ul></div><div style="display:contents" dir="auto"><blockquote id="7e145b15-b7e8-4161-8023-8fb239b97d2c" class="">위 정보는 기기의 내부 저장소(SharedPreferences)에 저장됩니다.</blockquote></div><div style="display:contents" dir="auto"><h3 id="fbe8f677-e3bd-4284-b1e9-327e5064c237" class="">1-3. 광고를 통해 수집되는 정보 (Google AdMob)</h3></div><div style="display:contents" dir="auto"><p id="e9f9f30c-df54-4e5e-8352-ac88b8ca4cbc" class="">광고 무료 버전 이용 시, Google AdMob이 아래 정보를 수집할 수 있습니다.</p></div><div style="display:contents" dir="auto"><ul id="f9788a80-a8c0-43fb-b822-c22c5bc141dc" class="bulleted-list"><li style="list-style-type:disc">광고 식별자 (IDFA/GAID)</li></ul></div><div style="display:contents" dir="auto"><ul id="82d42bb1-1f53-4677-b3e0-aa4a2ad44a9a" class="bulleted-list"><li style="list-style-type:disc">앱 사용 패턴, 기기 정보</li></ul></div><div style="display:contents" dir="auto"><blockquote id="ff55cc35-e07d-44c3-9a3b-5588ef160e25" class="">iOS 14.5 이상에서는 앱 최초 실행 시 추적 동의(ATT) 팝업이 표시되며, 동의하지 않아도 앱을 정상 이용할 수 있습니다.</blockquote></div><div style="display:contents" dir="auto"><blockquote id="b07c26fd-6a3c-40aa-838d-670f88477989" class="">Google AdMob의 개인정보 처리 방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></blockquote></div><div style="display:contents" dir="auto"><hr id="929d8e3a-52c1-44fb-b9ae-f70c2f76abec"/></div><div style="display:contents" dir="auto"><h2 id="2b6516a0-e6ef-4e3e-8025-88a5fef81717" class="">2. 개인정보 이용 목적</h2></div><div style="display:contents" dir="auto"><ul id="552252ad-cf01-4947-8a7c-e89fe014e22d" class="bulleted-list"><li style="list-style-type:disc">생리 주기 예측 및 건강 정보 제공</li></ul></div><div style="display:contents" dir="auto"><ul id="b1d967a8-4d2d-471a-ae0b-1cae38943957" class="bulleted-list"><li style="list-style-type:disc">푸시 알림 발송 (생리 예정, 기록 리마인더, 가임기·배란일 알림)</li></ul></div><div style="display:contents" dir="auto"><ul id="c7a2e9ad-9590-4ed3-a7a1-f96eb6351da2" class="bulleted-list"><li style="list-style-type:disc">앱 서비스 개선</li></ul></div><div style="display:contents" dir="auto"><ul id="c64f2ae8-b85e-426a-9c3d-52789cd8dd80" class="bulleted-list"><li style="list-style-type:disc">광고 노출 (Google AdMob, 광고 제거 구매 시 제외)</li></ul></div><div style="display:contents" dir="auto"><hr id="cc4c5b85-ddf3-44c4-b75b-247b8f25bea8"/></div><div style="display:contents" dir="auto"><h2 id="462997c8-daea-4041-a9a6-9a43130e8061" class="">3. 개인정보 보유 및 이용 기간</h2></div><div style="display:contents" dir="auto"><ul id="181b9b58-9741-4bf9-9c33-d237c53868d3" class="bulleted-list"><li style="list-style-type:disc"><strong>건강 기록 데이터</strong>: 이용자가 직접 삭제하거나 앱을 삭제할 때까지</li></ul></div><div style="display:contents" dir="auto"><ul id="f782ae10-b0bb-41f4-8417-417925cb08ac" class="bulleted-list"><li style="list-style-type:disc"><strong>앱 설정 정보</strong>: 앱을 삭제할 때까지</li></ul></div><div style="display:contents" dir="auto"><ul id="e497dadf-08a3-4b8f-9ece-4e6209b93ed0" class="bulleted-list"><li style="list-style-type:disc"><strong>광고 관련 데이터</strong>: Google AdMob 정책에 따름</li></ul></div><div style="display:contents" dir="auto"><hr id="417e18b5-02e1-429f-ba15-f0f54ef464c8"/></div><div style="display:contents" dir="auto"><h2 id="146a36d0-f7e8-45bc-9f81-f39dcc92aa4d" class="">4. 제3자 제공 현황</h2></div><div style="display:contents" dir="ltr"><table id="d0ce0143-0cd8-4c4d-bde2-b50c833be3e6" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="d9c73899-0d5b-401f-87b0-8d9e2155ebb6"><th id="U@Z|" class="simple-table-header-color simple-table-header">수신자</th><th id="@ErW" class="simple-table-header-color simple-table-header">제공 항목</th><th id="jhEz" class="simple-table-header-color simple-table-header">목적</th><th id="OGPR" class="simple-table-header-color simple-table-header">보유 기간</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="94b1ae29-40f6-481d-a816-b2e804696a89"><td id="U@Z|" class="">Google LLC (AdMob)</td><td id="@ErW" class="">광고 식별자, 기기 정보</td><td id="jhEz" class="">맞춤형 광고 제공</td><td id="OGPR" class="">Google 정책에 따름</td></tr></div><div style="display:contents" dir="ltr"><tr id="4b80da4d-e573-4717-8f5f-21d127982e48"><td id="U@Z|" class="">Apple / Google</td><td id="@ErW" class="">인앱 결제 정보</td><td id="jhEz" class="">광고 제거 상품 결제 처리</td><td id="OGPR" class="">각 스토어 정책에 따름</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><blockquote id="b4a3149c-7e0b-439d-bb1e-847e90c714d3" class=""><strong>건강 데이터(생리 주기, 증상, 체온 등)는 어떠한 제3자에게도 제공되지 않습니다.</strong></blockquote></div><div style="display:contents" dir="auto"><hr id="797550c8-d5ac-420e-90cf-d9ddb49b42fe"/></div><div style="display:contents" dir="auto"><h2 id="3b80162b-9e57-4478-b6e7-08248e0efb0a" class="">5. 개인정보 보호를 위한 기술적·관리적 조치</h2></div><div style="display:contents" dir="ltr"><table id="84bc0b9d-eeda-413d-a823-1d5575a7e47a" class="simple-table"><thead class="simple-table-header"><div style="display:contents" dir="ltr"><tr id="2c272739-acc1-4d0a-832d-9085e8ab1a71"><th id="av^[" class="simple-table-header-color simple-table-header">조치</th><th id="]Vwx" class="simple-table-header-color simple-table-header">내용</th></tr></div></thead><tbody><div style="display:contents" dir="ltr"><tr id="3667f7b9-bf6b-402e-802f-b2a6a52b7e2f"><td id="av^[" class="">암호화 저장</td><td id="]Vwx" class="">건강 기록 데이터는 iOS Keychain / Android Keystore 기반 암호화 저장소(FlutterSecureStorage)에 저장됩니다.</td></tr></div><div style="display:contents" dir="ltr"><tr id="3b50b320-c5cc-4964-a984-1cca19668c59"><td id="av^[" class="">서버 미전송</td><td id="]Vwx" class="">건강 데이터는 외부 서버로 전송되지 않으며 기기 내부에만 존재합니다.</td></tr></div><div style="display:contents" dir="ltr"><tr id="faec18aa-05ac-4c71-a45c-2acec8f420a6"><td id="av^[" class="">최소 수집</td><td id="]Vwx" class="">서비스 제공에 필요한 최소한의 정보만 수집합니다.</td></tr></div><div style="display:contents" dir="ltr"><tr id="81edd98a-8ad7-4d80-af9d-61508b344f02"><td id="av^[" class="">접근 제한</td><td id="]Vwx" class="">앱 외부에서 저장된 건강 데이터에 직접 접근할 수 없습니다.</td></tr></div></tbody></table></div><div style="display:contents" dir="auto"><hr id="31166ce8-1af0-4df5-bbd0-41af8032675a"/></div><div style="display:contents" dir="auto"><h2 id="6a08f7b4-b9ac-4962-b743-1b99cdd8b70b" class="">6. 개인정보 파기 절차 및 방법</h2></div><div style="display:contents" dir="auto"><p id="044d6b43-7aff-42a0-8bbe-7fdaf1483573" class=""><strong>파기 시점</strong></p></div><div style="display:contents" dir="auto"><ul id="3dc92e84-5b8b-406d-8748-7aa8632c7f97" class="bulleted-list"><li style="list-style-type:disc">이용자가 앱 내 &#x27;데이터 초기화&#x27; 기능을 실행한 즉시</li></ul></div><div style="display:contents" dir="auto"><ul id="ff4a6eb2-4933-4999-a904-92720dc4172f" class="bulleted-list"><li style="list-style-type:disc">이용자가 앱을 삭제한 즉시</li></ul></div><div style="display:contents" dir="auto"><p id="0be136c7-76f2-4b62-afdd-38c49ffb4fd1" class=""><strong>파기 방법</strong></p></div><div style="display:contents" dir="auto"><ul id="d6256b7d-eefb-452a-83f9-aacf5e0ba56c" class="bulleted-list"><li style="list-style-type:disc">건강 정보(생리 주기, 증상, 체온 등): 기기 암호화 저장소에서 영구 삭제 처리</li></ul></div><div style="display:contents" dir="auto"><ul id="a73e7711-b1e4-4466-8382-c24a5f6ce871" class="bulleted-list"><li style="list-style-type:disc">앱 설정 정보: 기기 내부 저장소에서 영구 삭제 처리</li></ul></div><div style="display:contents" dir="auto"><ul id="d016d8a3-2363-46d8-8776-3f04d8bd9014" class="bulleted-list"><li style="list-style-type:disc">단, 광고 네트워크(Google AdMob)가 보유한 데이터는 Google 정책에 따라 별도 처리됩니다.</li></ul></div><div style="display:contents" dir="auto"><hr id="074e79a7-5d37-4092-aea3-acfb3a45b381"/></div><div style="display:contents" dir="auto"><h2 id="1b2bdd58-b377-4f0b-952b-071bc0f64ffe" class="">7. 처리방침 변경 고지</h2></div><div style="display:contents" dir="auto"><p id="b2ec1ae5-54bd-4b9c-8e70-2b6f4d2c07f4" class="">본 방침이 변경되는 경우 다음 방법으로 사전 공지합니다.</p></div><div style="display:contents" dir="auto"><ul id="db32ee8a-18b7-4396-a3f7-3c10a43d84ea" class="bulleted-list"><li style="list-style-type:disc"><strong>앱 업데이트</strong> 문서(앱 스토어 버전 노트)</li></ul></div><div style="display:contents" dir="auto"><ul id="670edc57-917a-454e-8a4c-c03be93cfa72" class="bulleted-list"><li style="list-style-type:disc"><strong>이 페이지</strong> 갱신 (시행일 표시)</li></ul></div><div style="display:contents" dir="auto"><p id="12dab185-ec1c-44a7-93e2-f34506e8013d" class="">중요한 변경(이용 목적 변경, 제3자 신규 제공 등)의 경우 최소 7일 전 공지합니다.</p></div><div style="display:contents" dir="auto"><hr id="05f4b693-f99f-403b-a7d8-f97c00f259df"/></div><div style="display:contents" dir="auto"><h2 id="72a4f197-a649-4ac9-af21-eac8cf3ab865" class="">8. 이용자의 권리 및 행사 방법</h2></div><div style="display:contents" dir="auto"><p id="ca69ef25-9022-4c42-9f74-5efcccbed3fd" class="">이용자는 언제든지 다음 권리를 행사할 수 있습니다.</p></div><div style="display:contents" dir="auto"><ul id="09fb3c31-c70c-4bde-9060-5b8410228660" class="bulleted-list"><li style="list-style-type:disc"><strong>열람</strong>: 앱 내 기록 화면에서 모든 데이터 확인 가능</li></ul></div><div style="display:contents" dir="auto"><ul id="b3864158-859f-4682-987f-246a009249d2" class="bulleted-list"><li style="list-style-type:disc"><strong>수정</strong>: 해당 날짜 기록을 다시 저장하면 덮어씌워짐</li></ul></div><div style="display:contents" dir="auto"><ul id="88b95b6a-96c5-40a0-ade6-8f04e1587f9e" class="bulleted-list"><li style="list-style-type:disc"><strong>삭제</strong>: 앱 삭제 시 기기에 저장된 모든 데이터 삭제됨</li></ul></div><div style="display:contents" dir="auto"><hr id="1a0d47b4-810f-488a-95ac-b92cd72313b3"/></div><div style="display:contents" dir="auto"><h2 id="6989317d-b815-4ad1-a29a-7b8c0eeb29d0" class="">9. 개인정보 보호책임자</h2></div><div style="display:contents" dir="auto"><ul id="67cfdcef-f3bb-4b31-9ab7-3c54e741fea2" class="bulleted-list"><li style="list-style-type:disc">이메일: <a href="mailto:lyahn79@gmail.com">lyahn79@gmail.com</a></li></ul></div><div style="display:contents" dir="auto"><ul id="8b3ff804-c297-468f-9f34-24e98802477d" class="bulleted-list"><li style="list-style-type:disc">개인정보 관련 문의는 위 이메일로 연락 주시면 영업일 기준 3일 이내 답변 드립니다.</li></ul></div><div style="display:contents" dir="auto"><hr id="0e74298c-be07-4d1f-b446-fc74066d99c5"/></div><div style="display:contents" dir="auto"><h2 id="c7a3d06d-59d9-45a5-8495-8cc895da18f7" class="">10. 시행일</h2></div><div style="display:contents" dir="auto"><p id="38ee4553-e67f-4259-b26a-a3219e08f682" class="">본 개인정보 처리방침은 <strong>2026년 7월 1일</strong>부터 시행됩니다.</p></div><div style="display:contents" dir="auto"><p id="a1a42b5d-a494-45ad-be37-e6b0e9b1a60a" class="">방침 변경 시 앱 업데이트 또는 이 페이지를 통해 사전 공지합니다.</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
